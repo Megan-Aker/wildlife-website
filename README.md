@@ -5,7 +5,7 @@ This project is a fake nature site about bears. It has been marked up to acomida
 
 ## Accessibility Lab Answers
 1. The contrast ratio is 2.79:1 for the text color and background. The ideal ratio is around 4.5:1 for normal text and 3:1 for larger headings. Changing the text to be lighter on a dark background and vise versa makes for good contrast.
-2. To make the html more semantically correct, it should be wrapped in a <nav> element for better accessibility. The, font tag for the heading should be replaced with, <h1> and <h2> for better structure and screen reading. The css should reflect these changes to target these changes as well. 
+2. To make the html more semantically correct, it should be wrapped in a <nav> element for better accessibility. The, font tag for the heading should be replaced with, h1 and h2 for better structure and screen reading. The css should reflect these changes to target these changes as well. 
 3. The images need to have "alt" attributes for screen readers. 
 4. The audio should include captions to make the audio more accessible using <p>. There could also be a fall back link to download teh audio file if the user's device can't open the audio file. 
 5. There should be a hidden visual label for screen readers using "sr-only" class. 
