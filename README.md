@@ -9,7 +9,7 @@ This project is a fake nature site about bears. It has been marked up to acomida
 3. The images need to have "alt" attributes for screen readers. 
 4. The audio should include captions to make the audio more accessible using the tag p. There could also be a fall back link to download teh audio file if the user's device can't open the audio file. 
 5. There should be a hidden visual label for screen readers using "sr-only" class. 
-6. To make the hidden comment keyboard accessible it needs to be a <button> not <div>.
+6. To make the hidden comment keyboard accessible it needs to be a button not div.
 7. The table should have <th scope ="col"> for column headers and a caption for the content. 
 8. To make the overall website more accessible, could make a keyboard focus state that ensures all interactive elements have visible focus states. For better keyboard navigation, there could be a skip to content link at the top of the nav bar so users can skip repetitive content. 
 
