@@ -1,5 +1,4 @@
-/* || General setup */
-
+/* General setup */
 html, body {
   margin: 0;
   padding: 0;
@@ -7,7 +6,7 @@ html, body {
 
 html {
   font-size: 10px;
-  background-color: #dde;
+  background-color: rgb(216, 199, 185);
 }
 
 body {
@@ -16,31 +15,30 @@ body {
   margin: 0 auto;
 }
 
-/* || typography */
-
-font[size="7"], font[size="6"], font[size="5"] {
-  font-family: 'Sonsie One', cursive;
-  color: #2a2a2a;
-}
-
-p, input, li, table, label {
+/* Typography */
+body, p, input, li, table, label {
   font-family: 'Open Sans Condensed', sans-serif;
   color: #2a2a2a;
 }
 
-font[size="7"] {
+h1, h2, h3, h4 {
+  font-family: 'Sonsie One', cursive;
+  color: #2a2a2a;
+}
+
+h1 {
   font-size: 4rem;
   text-align: center;
   color: white;
   text-shadow: 2px 2px 10px black;
 }
 
-font[size="6"] {
+h2 {
   font-size: 3rem;
   text-align: center;
 }
 
-font[size="5"] {
+h3 {
   font-size: 2.2rem;
 }
 
@@ -49,50 +47,35 @@ p, li, table {
   line-height: 1.5;
 }
 
-/* || header layout */
-
-div[class="nav"], article, footer, .secondary {
-  background-color: green;
-}
-
-article, footer, .secondary {
-  padding: 10px 30px;
-}
-
-article {
-  margin-right: 10px;
-}
-
-div[class="nav"] {
-  height: 50px;
-  background-color: ff80ff;
+/* Nav styling */
+nav {
+  background-color: #826b5c;
   display: flex;
   padding: 1% 0;
   margin-bottom: 10px;
 }
 
-div[class="nav"] ul {
+nav ul {
   padding: 0;
   list-style-type: none;
   flex: 2;
   display: flex;
 }
 
-div[class="nav"] li {
-  display: inline;
-  text-align: center;
-  flex: 1;
+nav li {
+  flex: 2;
 }
 
-div[class="nav"] a {
+nav a {
   display: inline-block;
+  margin-left: 20px;
   font-size: 2rem;
   text-transform: uppercase;
   text-decoration: none;
   color: black;
 }
 
-div[class="nav"] .search {
+nav .search {
   flex: 1;
   display: flex;
   align-items: center;
@@ -114,11 +97,10 @@ div[class="nav"] .search {
   margin-left: 1rem;
   background: #333;
   border: 0;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
-/* || main layout */
-
+/* Main layout */
 main {
   display: flex;
 }
@@ -136,11 +118,11 @@ footer {
 }
 
 /* Table styling */
-
 table {
   width: 100%;
-  background-color: #dde;
+  background-color: rgb(185, 159, 133);
   border-collapse: collapse;
+  color: rgb(0, 0, 0);
 }
 
 th, td {
@@ -149,18 +131,14 @@ th, td {
 
 td {
   text-align: center;
-}
-
-th[scope="col"] {
-  border-bottom: 1px solid black;
+  color: rgb(0, 0, 0);
 }
 
 tbody tr:nth-child(odd) {
-  background-color: #def;
+  background-color: rgb(250, 240, 230);
 }
 
-/* styling content images and audio */
-
+/* Styling content images and audio */
 img, audio {
   display: block;
   margin: 0 auto;
@@ -171,22 +149,18 @@ audio {
 }
 
 /* Comments styling */
-
 .comments {
-  background-color: #def;
+  background-color: rgb(240,230,220);
   padding: 10px;
 }
 
 .show-hide {
   cursor: pointer;
-}
-
-.comments font[size="6"] {
-  font-size: 2rem;
-}
-
-.comments font[size="6"]:nth-of-type(2) {
-  margin-bottom: 0;
+  text-align: center;
+  width: 150px;
+  background: #333;
+  color: white;
+  font-size: 1.6rem;
 }
 
 .comment-form {
@@ -207,22 +181,6 @@ audio {
 .comment-form input {
   margin-left: 1rem;
   flex: 6;
-}
-
-.show-hide {
-  text-align: center;
-  width: 150px;
-}
-
-.comment-form input, .comment-form label, .show-hide {
-  font-size: 1.6rem;
-  line-height: 32px;
-}
-
-.comment-form input[type="submit"], .show-hide {
-  background: #333;
-  border: 0;
-  color: white;
 }
 
 .comment-form input[type="submit"] {
@@ -247,4 +205,16 @@ audio {
 
 .comment-container li p:nth-child(2) {
   flex: 5;
+}
+
+/* Accessibility - visually hidden elements */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
